@@ -281,16 +281,13 @@ nav li :hover {
         font-family: myfont;
         color: yellow;
         text-align: center;
-        font-size: 45px;
+        font-size: 30px;
         padding-top: 295%;
     }
-    .linkforwhatsapp {
-        font-family: myfont;
+    .linkforwhatsapp a {
+        text-align: center;
         color: yellow;
-        position: absolute;
-        font-size: 20px;
-        right:  34.5%;
-        padding-top: 10%;
+        font-size: 30px;
     }
     .whtsimg {
         padding-top: 5%;
