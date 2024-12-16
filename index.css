@@ -189,6 +189,9 @@ nav li :hover {
         font-size: small;
     }
 
+
+/* For Mobile */
+
 }
 @media screen and (max-width:500px) {
     
@@ -231,7 +234,7 @@ nav li :hover {
     .container {
         position: absolute;
         bottom: -140%;
-        left: 18%;
+        left: 10%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -253,4 +256,12 @@ nav li :hover {
         padding-top: 75%;
         font-size: small;
     }
+}
+
+.cust h1 {
+    font-family: myfont;
+    color: yellow;
+    text-align: center;
+    font-size: larger;
+
 }
