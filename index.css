@@ -1,0 +1,256 @@
+@font-face {
+    font-family: myfont;
+    src: url(varsity_regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+nav li :hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.main {
+    width: 100%;
+}
+
+.content {
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+}
+
+.content h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-family: myfont;
+}
+
+.content h2 {
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.club {
+    font-family: myfont;
+    color: red;
+}
+
+.mimage {
+    display: flex;
+    justify-content: center;
+}
+
+.bgimage {
+    position: absolute;
+    background-size: auto;
+    background-repeat: no-repeat;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    height: 117%;
+    background-position: center;
+    right: 0%;
+    bottom: 0;
+    top: 160%;
+    left: 0%;
+    z-index: -2;
+}
+
+.container {
+    position: absolute;
+    bottom: -145%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.catalog1 {
+    margin: 15px;
+    background-color: white;
+    border-radius: 30px;
+    height: 350px;
+    width: 550px;
+    flex-basis: 20%;
+}
+.p1 {
+    font-family: myfont;
+    color: yellow;
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 8%;
+}
+
+@media screen and (max-width:1200px) {
+    .mimage {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mimage img {
+        width: 300px;
+    }
+
+    .bgimage {
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: fit-content;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .p1 {
+        font-family: myfont;
+        color: yellow;
+        letter-spacing: 3px;
+        text-align: center;
+        text-decoration: underline;
+        padding-top: 65%;
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .mimage {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mimage img {
+        width: 300px;
+    }
+
+    .container {
+        position: absolute;
+        bottom: -100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .catalog1 {
+        margin: 15px;
+        background-color: white;
+        border-radius: 30px;
+        height: 250px;
+        width: 190px;
+        flex-basis: 30%;
+    }
+    .catalog1 img {
+        height: 250px;
+        width: 210px;
+        justify-content: center;
+    }
+    .bgimage {
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: fit-content;
+        background-attachment: fixed;
+        background-position: center;
+        height: 400px;
+        position: absolute;
+        top: 140%;
+    }
+    .p1 {
+        font-family: myfont;
+        color: yellow;
+        letter-spacing: 3px;
+        text-align: center;
+        text-decoration: underline;
+        padding-top: 65%;
+        font-size: small;
+    }
+
+}
+@media screen and (max-width:500px) {
+    
+    .bgimage {
+        background-size: 0 !important;
+        display: none;
+    }
+    .content {
+        text-align: center;
+        margin-top: 2%;
+        color: white;
+    }
+    
+    .content h1 {
+        font-size: 30px;
+        letter-spacing: 3px;
+        font-family: myfont;
+    }
+    
+    .content h2 {
+        letter-spacing: 2px;
+        text-decoration: underline;
+    }
+    
+    .club {
+        font-family: myfont;
+        color: red;
+    }
+    
+    .mimage {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mimage img {
+        width: 200px;
+    }
+    .container {
+        position: absolute;
+        bottom: -140%;
+        left: 18%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .catalog1 {
+        margin: 15px;
+        background-color: white;
+        border-radius: 30px;
+        height: 250px;
+        width: 50px;
+        flex-basis: 100%;
+    }
+    .p1 {
+        font-family: myfont;
+        color: yellow;
+        letter-spacing: 3px;
+        text-align: center;
+        text-decoration: underline;
+        padding-top: 75%;
+        font-size: small;
+    }
+}
